@@ -273,6 +273,40 @@ print(sorted(find_members))
 print(sorted(members))
 
 print
-print("11")
+print("11 Numpy Arrays")
+print
+
+#Normal way of calculating stuff
+weight_kg = [81.65, 97.52, 95.25, 92.98, 86.18, 88.45]
+
+import numpy as np
+
+# Create a numpy array np_weight_kg from weight_kg
+np_weight_kg = np.array(weight_kg)
+weight_lbs = []
+
+# Create np_weight_lbs from np_weight_kg
+for weight_kg in np_weight_kg:
+    weight_p = weight_kg * 2.2
+    weight_lbs.append(weight_p)
+
+np_weight_lbs = np.array(weight_lbs)
+# Print out np_weight_lbs
+print(np_weight_lbs)
+
+#Nicer way of doing the same thing:
+weight_kg = [81.65, 97.52, 95.25, 92.98, 86.18, 88.45]
+
+# Create a numpy array np_weight_kg from weight_kg
+np_weight_kg = np.array(weight_kg)
+
+# Create np_weight_lbs from np_weight_kg
+np_weight_lbs = np_weight_kg * 2.2
+
+# Print out np_weight_lbs
+print(np_weight_lbs)
+
+print
+print("12")
 print
 
