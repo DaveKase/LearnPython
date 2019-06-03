@@ -175,6 +175,34 @@ else: # in here it doesn't work, since we have break in for loop, but with conti
 print("done with this lesson")
 
 print
-print("6")
+print("7")
+print
+
+# Modify this function to return a list of strings as defined above
+def list_benefits():
+    # One thing worth mentioning is how to return more than one variable here
+    s1 = "More organized code"
+    s2 = "More readable code"
+    s3 = "Easier code reuse"
+    s4 = "Allowing programmers to share and connect code together"
+    
+    return s1, s2, s3, s4
+
+# Modify this function to concatenate to each benefit - " is a benefit of functions!"
+def build_sentence(benefit):
+    # Note here how strings are built
+    return "%s is a benefit of functions!" % benefit
+
+
+def name_the_benefits_of_functions():
+    list_of_benefits = list_benefits()
+    
+    for benefit in list_of_benefits:
+        print(build_sentence(benefit))
+
+name_the_benefits_of_functions()
+
+print
+print("8")
 print
 
