@@ -397,7 +397,6 @@ print("16 Regex")
 print
 
 # Exercise: make a regular expression that will match an email
-import re
 def test_email(your_pattern):
     pattern = re.compile(your_pattern)
     emails = ["john@example.com", "python-list@python.org", "wha.t.`1an?ug{}ly@email.com"]
@@ -415,3 +414,26 @@ test_email(pattern)
 print
 print("17 Exception Handling")
 print
+
+# Handle all the exceptions!
+#Setup
+actor = {"name": "John Cleese", "rank": "awesome"}
+
+#Function to modify, should return the last name of the actor - think back to previous lessons for how to get it
+def get_last_name():
+    return actor["last_name"]
+
+#Test code
+try:
+    get_last_name()
+except KeyError:
+    print("Key Error occured")
+print("All exceptions caught! Good job!")
+
+lastName = actor["name"].split()[1]
+print("The actor's last name is %s" % lastName)
+
+print
+print("18 Sets")
+print
+
