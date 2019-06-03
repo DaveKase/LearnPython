@@ -437,3 +437,28 @@ print
 print("18 Sets")
 print
 
+a = set(["Jake", "John", "Eric"])
+b = set(["John", "Jill"])
+
+# Here diff from list a
+print(a.difference(b))
+
+# Intersect
+print(a.intersection(b))
+print(b.intersection(a))
+
+# Symmetric diff
+print(a.symmetric_difference(b))
+print(b.symmetric_difference(a))
+
+# diffs
+print(a.difference(b))
+print(b.difference(a))
+
+# Join two lists
+print(a.union(b))
+
+print
+print("19")
+print
+
