@@ -193,7 +193,6 @@ def build_sentence(benefit):
     # Note here how strings are built
     return "%s is a benefit of functions!" % benefit
 
-
 def name_the_benefits_of_functions():
     list_of_benefits = list_benefits()
     
@@ -215,8 +214,8 @@ class Vehicle:
     def description(self):
         desc_str = "%s is a %s %s worth $%.2f." % (self.name, self.color, self.kind, self.value)
         return desc_str
-# your code goes here
 
+# your code goes here
 car1 = Vehicle()
 car1.kind = "convertible"
 car1.name = "Fer"
@@ -234,5 +233,26 @@ print(car1.description())
 print(car2.description())
 
 print
-print("9")
+print("9 Dictionaries")
+print
+
+phonebook = {
+    "John" : 938477566,
+    "Jack" : 938377264,
+    "Jill" : 947662781
+}
+
+# write your code here
+#del phonebook["Jill"] # dictionary item can be deleted this way as well
+phonebook.pop("Jill")
+phonebook["Jake"] = 938273443
+
+# testing code
+if "Jake" in phonebook:
+    print("Jake is listed in the phonebook.")
+if "Jill" not in phonebook:
+    print("Jill is not listed in the phonebook.")
+
+print
+print("10 Dictionaries")
 print
