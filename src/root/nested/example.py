@@ -361,3 +361,14 @@ print
 print("14 List Comprehensions")
 print
 
+numbers = [34.6, -203.4, 44.9, 68.3, -12.2, 44.6, 12.7]
+newlist = [num for num in numbers if num > 0]
+
+#This is the original solution, but here double is converted to int
+cor_newlist = [int(num) for num in numbers if num > 0]
+print(newlist)
+print(cor_newlist)
+
+print
+print("15 Multiple Function Arguments")
+print
