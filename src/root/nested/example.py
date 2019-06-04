@@ -512,6 +512,17 @@ class Vehicle2:
 print(dir(Vehicle2))
 
 print
-print("22")
+print("22 Nested Function")
 print
 
+def multiplier_of(n):
+    def multiplier(number):
+        return number * n
+    return multiplier
+
+multiplywith5 = multiplier_of(5)
+print(multiplywith5(9))
+
+print
+print("23 Decorators")
+print
