@@ -484,5 +484,17 @@ print(decoded_salaries["Me"])
 print(new_salaries)
 
 print
-print("20")
+print("20 Partial functions")
 print
+
+from functools import partial
+def func(u,v,w,x):
+    return u*4 + v*3 + w*2 + x
+
+p = partial(func,5,6,7)
+print(p(8))
+
+print
+print("21")
+print
+
